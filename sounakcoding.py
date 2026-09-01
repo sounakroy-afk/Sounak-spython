@@ -17,3 +17,11 @@ if(a==2):
     deposit=float(input("Enter the amount to be deducted"))
     money=subtract_balance(balance,deposit)
     print("The new balance is {}".format(money))
+def compound_interest(balance,rate,time):
+    ci=balance*(1+rate/100)**time
+    return ci
+if(a==3):
+    rate=int(input("Please enter the rate for compound interest:"))
+    time=int(input("Please enter the time for compound interest:"))
+    amount=compound_interest(balance,rate,time)
+    print("The amount for compound interest is {}".format(amount))
