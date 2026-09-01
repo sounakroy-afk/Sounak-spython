@@ -26,3 +26,9 @@ print(fruits)
 fruits.append("apple")
 print(fruits.index("apple"))
 print(fruits.count("pineapple"))
+
+fruits={"apple","banana","orange","coconut"}
+fruits.add("pineapple")
+print(fruits)
+fruits.remove("pineapple")
+print(fruits)
