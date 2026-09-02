@@ -5,3 +5,6 @@ array=np.array([[1,2,3,4],
                 [9,10,11,12],
                 [13,14,15,16]])
 print(array[1:3])
+print(array.ndim)
+print(array.shape)
+print(len(array.shape) == array.ndim)
