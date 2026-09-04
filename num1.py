@@ -1,5 +1,6 @@
 import numpy as np
-scores=np.array([91,55,100,73,82,64])
-print(scores == 100)
-scores[scores < 60] = 0
-print(scores)
+array1=np.array([[1,2,3,4,]])
+array2=np.array([[1],[2],[3],[4]])
+print(array1.shape)
+print(array2.shape)
+print(array1 * array2)
