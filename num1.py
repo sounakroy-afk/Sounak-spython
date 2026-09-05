@@ -1,5 +1,10 @@
 import numpy as np
-array1=np.array([[1,2,3,4,5],[6,7,8,9,10]])
-print(np.sum(array1))
-print(np.mean(array1))
-print(np.sum(array1, axis=1))
+ages=np.array([[21,17,19,20,16,30,18,65],[39,22,15,99,18,19,20,21]])
+teenagers= ages[ages<18]
+adults=ages[(ages>=18) & (ages<65)]
+seniors=ages[ages>=65]
+evens=ages[ages%2==0]
+print(evens)
+print(seniors)
+print(adults)
+print(teenagers)
