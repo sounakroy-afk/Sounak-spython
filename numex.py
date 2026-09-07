@@ -1,4 +1,4 @@
 import numpy as np
-scores=np.array([[80,90,100],[70,85,95]])
-print(np.max(scores),np.argmax(scores))
-print(np.sum(scores, axis=0))
+ages=np.array([12,18,25,15,40,65,10])
+above18=np.where(ages>=18, ages, 0)
+print(above18)
