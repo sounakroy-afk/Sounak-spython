@@ -1,3 +1,4 @@
 import numpy as np
-array1=np.array([1.2,2.7,3.5])
-print(np.round(array1))
+scores=np.array([[80,90,100],[70,85,95]])
+print(np.max(scores),np.argmax(scores))
+print(np.sum(scores, axis=0))
