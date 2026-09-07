@@ -1,4 +1,4 @@
 import numpy as np
-ages=np.array([12,18,25,15,40,65,10])
-above18=np.where(ages>=18, ages, 0)
-print(above18)
+rng=np.random.default_rng(seed=1)
+letters= np.array(["A","B","C","D"])
+print(rng.integers(low=1, high=10, size=(3,2)))
