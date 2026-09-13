@@ -26,5 +26,13 @@ beta = float(input("Enter the value of beta but its not being less than 0:"))
 adjusted_img_array = np.clip(img_array * alpha + beta, 0, 255)
 print(adjusted_img_array)
 crop = img_array[2:10, 2:5]
+print(crop)
 crop_horizontal = crop[:, ::-1]
 print(crop_horizontal)
+print(img_array[10:18, 10:13])
+img_array[10:18, 10:13] = crop_horizontal
+print(crop_horizontal)
+binary_image = np.where(img_array > 200, img_array, 0)
+print(binary_image[10:18, 10:13])
+output = Image.fromarray(adjusted_img_array.astype(np.uint8))
+output.save("mom.jpg", "JPEG")
