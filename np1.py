@@ -1,12 +1,11 @@
 import numpy as np
 
-scores = np.array([[55, 88, 92, 60], [45, 78, 85, 98]])
-mid_tests = scores[:, 1:3]
-print(mid_tests)
-test_means = np.mean(scores, axis=0)
-print(test_means)
-failing_scores = scores[scores < 60]
-print(failing_scores)
-curved_scores = np.where(scores < 60, 60, scores)
-print(curved_scores)
-print(mid_tests)
+# Two force vectors acting on a 2D particle
+v1 = np.array([3.0, 4.0])  # Force 1
+v2 = np.array([-2.0, 5.0])  # Force 2
+v_net = v1 + v2
+print(v_net)
+v1_scaled = v1 * 2
+v2_scaled = v2 * -1
+net_magnitude = np.linalg.norm(v_net)
+print(net_magnitude)
