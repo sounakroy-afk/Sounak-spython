@@ -25,3 +25,15 @@ I = np.identity(3)
 print(I)
 I = np.full((4, 4), 7)
 print(I)
+I = np.random.rand(3, 3)
+print(I)
+I = np.random.randint(1, 10, size=(3, 3))
+print(I)
+
+I = np.full((5, 5), 1)
+print(I)
+B = np.zeros((3, 3))
+B[1, 1] = 9
+print(B)
+B = I[1:4, 1:4]
+print(I)
