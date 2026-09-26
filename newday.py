@@ -35,5 +35,16 @@ print(I)
 B = np.zeros((3, 3))
 B[1, 1] = 9
 print(B)
-B = I[1:4, 1:4]
+I[1:4, 1:4] = B
 print(I)
+
+
+X = np.array([[1, 2], [3, 4]])
+Y = np.array([[5, 6], [7, 8]])
+
+print(X * Y)
+print(X @ Y)
+print(np.linalg.det(X))
+print(np.linalg.det(Y))
+print(np.sum(X, axis=0))
+print(np.sum(X, axis=0))
