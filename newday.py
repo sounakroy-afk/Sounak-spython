@@ -16,3 +16,12 @@ sub_matrix = A[1:3, 1:3]
 print(sub_matrix)
 co14 = A[:4, 4]
 print(co14)
+A_mod = A.copy()
+A[1:4, 1:4] = 0
+print(A)
+
+
+I = np.identity(3)
+print(I)
+I = np.full((4, 4), 7)
+print(I)
