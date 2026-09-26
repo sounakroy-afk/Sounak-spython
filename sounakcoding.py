@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 balance=float(input("Enter your balance:"))
+=======
+balance=100.00
+>>>>>>> 19267e3c11700ab62a250795e6c2ee0b406e4bdf
 print("This is a bank account based program to help calculate and maintain everyone's balance")
 print("The balance starts from 100.00")
 print("There are four options 1-Add balance 2-Subtract balance 3-Compound interest")
